@@ -27,5 +27,5 @@ output :
 Soal : menghitung jumlah huruf besar dan kecil dalam sebuah kalimat
 kalimat : haLo hARi iNi sAya belAjAR NodeJS
 output :
-*huruf kecil : 17
-*huruf besar : 11
+* huruf kecil : 17
+* huruf besar : 11
