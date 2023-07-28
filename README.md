@@ -22,3 +22,10 @@ output :
 * student 7 = 50 atau C dan dinyatakan : TIDAK LULUS
 * student 8 = 113 atau Nilai tidak terdaftar dan dinyatakan : TIDAK LULUS
 * student 9 = -2 atau Nilai tidak terdaftar dan dinyatakan : TIDAK LULUS
+
+3. Day 3
+Soal : menghitung jumlah huruf besar dan kecil dalam sebuah kalimat
+kalimat : haLo hARi iNi sAya belAjAR NodeJS
+output :
+*huruf kecil : 17
+*huruf besar : 11

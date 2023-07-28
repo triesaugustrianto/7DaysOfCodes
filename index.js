@@ -70,3 +70,31 @@ student 7 = 50 atau C dan dinyatakan : TIDAK LULUS
 student 8 = 113 atau Nilai tidak terdaftar dan dinyatakan : TIDAK LULUS
 student 9 = -2 atau Nilai tidak terdaftar dan dinyatakan : TIDAK LULUS
 */
+
+//DAY 3
+// Menghitung jumlah huruf besar dan kecil pada kalimat
+
+const kalimat = "haLo hARi iNi sAya belAjAR NodeJS"
+
+function countChar(kalimat) {
+    let hrfBesar = 0
+    let hrfKecil = 0
+    for (const c of kalimat) {
+        if(c === c.toLowerCase() && c !== ' '){
+            hrfKecil++
+        }else if(c === c.toUpperCase() && c !== ' '){
+            hrfBesar++
+        }
+    }
+    return [hrfBesar, hrfKecil]
+}
+
+const [hrfBesar, hrfKecil] = countChar(kalimat)
+console.log(`huruf kecil : ${hrfKecil}`)
+console.log(`huruf besar : ${hrfBesar}`)
+
+/*
+output :
+huruf kecil : 17
+huruf besar : 11
+*/
