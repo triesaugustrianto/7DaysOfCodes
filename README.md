@@ -29,3 +29,15 @@ kalimat : haLo hARi iNi sAya belAjAR NodeJS
 output :
 * huruf kecil : 17
 * huruf besar : 11
+
+4. Day 4
+soal : Menentukan pecahan dalam sebuah nominal tertentu.
+nominal : 467.
+output : 
+* 100  : 4
+* 50  : 1
+* 20  : 0
+* 10  : 1
+* 5  : 1
+* 2  : 1
+* 1  : 0

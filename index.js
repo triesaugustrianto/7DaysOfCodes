@@ -74,27 +74,59 @@ student 9 = -2 atau Nilai tidak terdaftar dan dinyatakan : TIDAK LULUS
 //DAY 3
 // Menghitung jumlah huruf besar dan kecil pada kalimat
 
-const kalimat = "haLo hARi iNi sAya belAjAR NodeJS"
+// const kalimat = "haLo hARi iNi sAya belAjAR NodeJS"
 
-function countChar(kalimat) {
-    let hrfBesar = 0
-    let hrfKecil = 0
-    for (const c of kalimat) {
-        if(c === c.toLowerCase() && c !== ' '){
-            hrfKecil++
-        }else if(c === c.toUpperCase() && c !== ' '){
-            hrfBesar++
-        }
-    }
-    return [hrfBesar, hrfKecil]
-}
+// function countChar(kalimat) {
+//     let hrfBesar = 0
+//     let hrfKecil = 0
+//     for (const c of kalimat) {
+//         if(c === c.toLowerCase() && c !== ' '){
+//             hrfKecil++
+//         }else if(c === c.toUpperCase() && c !== ' '){
+//             hrfBesar++
+//         }
+//     }
+//     return [hrfBesar, hrfKecil]
+// }
 
-const [hrfBesar, hrfKecil] = countChar(kalimat)
-console.log(`huruf kecil : ${hrfKecil}`)
-console.log(`huruf besar : ${hrfBesar}`)
+// const [hrfBesar, hrfKecil] = countChar(kalimat)
+// console.log(`huruf kecil : ${hrfKecil}`)
+// console.log(`huruf besar : ${hrfBesar}`)
 
 /*
 output :
 huruf kecil : 17
 huruf besar : 11
+*/
+
+//DAY 4 --------------------
+// menentuka uang pecahan yang digunakan dalam nominal tertentu
+
+const pecahan = [100,50,20,10,5,2,1]
+const jumlah =[0,0,0,0,0,0,0]
+let nominal = 467
+const checkPecahan = () => {
+
+    for(let i = 0; i< pecahan.length; i++) {
+        while(nominal - pecahan[i] >= 0){
+            nominal = nominal - pecahan[i]
+            jumlah[i]++
+        }
+    }
+
+    pecahan.forEach((item, index) => {
+        console.log(item," : "+jumlah[index])
+    })
+}
+checkPecahan(nominal)
+
+/*
+output :
+100  : 4
+50  : 1
+20  : 0
+10  : 1
+5  : 1
+2  : 1
+1  : 0 
 */
