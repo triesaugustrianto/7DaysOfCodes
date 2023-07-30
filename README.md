@@ -41,3 +41,12 @@ output :
 * 5  : 1
 * 2  : 1
 * 1  : 0
+
+5. Day 5
+soal : membalikan sebuah kalimat yang sudah ditentukan
+kalimat : hari ini kita belajar
+output :
+* dengan function reverse :
+ rajaleb atik ini irah
+* dengan algoritma manual :
+rajaleb atik ini irah

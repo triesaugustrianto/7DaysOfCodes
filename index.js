@@ -74,24 +74,24 @@ student 9 = -2 atau Nilai tidak terdaftar dan dinyatakan : TIDAK LULUS
 //DAY 3
 // Menghitung jumlah huruf besar dan kecil pada kalimat
 
-// const kalimat = "haLo hARi iNi sAya belAjAR NodeJS"
+const kalimat = "haLo hARi iNi sAya belAjAR NodeJS"
 
-// function countChar(kalimat) {
-//     let hrfBesar = 0
-//     let hrfKecil = 0
-//     for (const c of kalimat) {
-//         if(c === c.toLowerCase() && c !== ' '){
-//             hrfKecil++
-//         }else if(c === c.toUpperCase() && c !== ' '){
-//             hrfBesar++
-//         }
-//     }
-//     return [hrfBesar, hrfKecil]
-// }
+function countChar(kalimat) {
+    let hrfBesar = 0
+    let hrfKecil = 0
+    for (const c of kalimat) {
+        if(c === c.toLowerCase() && c !== ' '){
+            hrfKecil++
+        }else if(c === c.toUpperCase() && c !== ' '){
+            hrfBesar++
+        }
+    }
+    return [hrfBesar, hrfKecil]
+}
 
-// const [hrfBesar, hrfKecil] = countChar(kalimat)
-// console.log(`huruf kecil : ${hrfKecil}`)
-// console.log(`huruf besar : ${hrfBesar}`)
+const [hrfBesar, hrfKecil] = countChar(kalimat)
+console.log(`huruf kecil : ${hrfKecil}`)
+console.log(`huruf besar : ${hrfBesar}`)
 
 /*
 output :
@@ -129,4 +129,40 @@ output :
 5  : 1
 2  : 1
 1  : 0 
+*/
+
+//DAY 5 ------------------
+// balik sebuah kalimat "hari ini kita belajar"
+
+let kalimat5 = "hari ini kita belajar"
+
+// pakai function javascript--------
+function reverseString(str) {
+   let hasil = str.split('')
+    .reverse()
+    .join('')
+    return hasil
+}
+console.log('dengan function reverse :')
+console.log(reverseString(kalimat5))
+
+// pakai algoritma manual--------
+function reverseManual(str) {
+    str = str.split('')
+    let result = []
+    for (let i = str.length; i >= 0; i--){
+        result.push(str[i])
+    }   
+    return result.join('')
+}
+
+console.log('dengan algoritma manual :')
+console.log(reverseManual(kalimat5))
+
+/*
+output : 
+dengan function reverse :
+rajaleb atik ini irah
+dengan algoritma manual :
+rajaleb atik ini irah
 */
