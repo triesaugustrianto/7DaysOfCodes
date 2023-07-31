@@ -166,3 +166,30 @@ rajaleb atik ini irah
 dengan algoritma manual :
 rajaleb atik ini irah
 */
+
+//cek palindrom kalimat = kasur rusak
+//ya atau tidak
+
+let kataPalindrom = 'race car'
+function reverseString(str) {
+    str = str.split('')
+    str.reverse()
+    joinStr = str.join('')
+    
+    return joinStr
+}
+
+function palindromCheck(s) {
+    if (s.split(' ').join('') === reverseString(s).split(' ').join('')){
+        return 'kalimat : '+s +', merupakan palindrom'
+    } else {
+        return 'kalimat : '+s +', bukan palindrom'
+    }
+}
+
+console.log(palindromCheck(kataPalindrom))
+
+/*
+output : 
+kalimat : race car, merupakan palindrom 
+*/

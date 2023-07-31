@@ -50,3 +50,9 @@ output :
  rajaleb atik ini irah
 * dengan algoritma manual :
 rajaleb atik ini irah
+
+6. Day 7
+Soal : melakukan pengecekan apakah suatu kalimat berbentuk palindrom atau bukan,
+kalimat : race car, 
+output :
+* kalimat : race car, merupakan palindrom
