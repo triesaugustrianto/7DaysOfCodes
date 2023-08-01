@@ -193,3 +193,36 @@ console.log(palindromCheck(kataPalindrom))
 output : 
 kalimat : race car, merupakan palindrom 
 */
+
+
+//DAY 7---------------
+// membandikan semua value dua array di index yang sama
+let arr1 = [1,3,6]
+let arr2 = [2,3,4]
+
+
+function compareTriplets(a, b) {
+    let alice = [0]
+    let bob = [0]
+    for(let i = 0; i < a.length; i++){
+        if(a[i] > b[i]){
+            alice[0]++
+        } else if(a[i] < b[i]){
+            bob[0]++
+        } else {
+            
+        }
+    }
+    return [alice, bob]
+}
+
+let resultArr = compareTriplets(arr1,arr2)
+const [alice, bob] = resultArr
+console.log('Skor alice : ' +alice)
+console.log('Skor bob : ' +bob)
+
+/*
+output : 
+Skor alice : 1
+Skor bob : 1
+*/

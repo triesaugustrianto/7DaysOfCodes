@@ -7,7 +7,7 @@ Adalah sebuah progres selama 7 hari dan disetiap hari akan memposting / push seb
 Soal : membuat suatu code untuk memfilter atau menyaring dari sebuah kalimat agar nanti di tampilkan tanpa huruf vokal
 kalimat : "hallo hari ini saya belajar filter"
 output :
-hll hr n sy bljr fltr
+* hll hr n sy bljr fltr
 
 2. Day 2
 Soal : tentukan nilai raport dan kelulusan berdasarkan nilai angka yang sudah ditentukan
@@ -51,8 +51,16 @@ output :
 * dengan algoritma manual :
 rajaleb atik ini irah
 
-6. Day 7
+6. Day 6
 Soal : melakukan pengecekan apakah suatu kalimat berbentuk palindrom atau bukan,
 kalimat : race car, 
 output :
 * kalimat : race car, merupakan palindrom
+
+7. Day 7
+soal : membandikan semua value dua array di index yang sama
+arr1 = [1,3,6]
+arr2 = [2,3,4],
+output :
+* Skor alice : 1
+* Skor bob : 1
